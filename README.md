@@ -16,9 +16,9 @@ Uma aplicação web moderna para aprender inglês e expandir seu vocabulário, d
   - [Vercel](#vercel-recomendado)
   - [Netlify](#netlify)
   - [Render](#render)
-- [📊 Web Vitals - Lighthouse Metrics](#-web-vitals---lighthouse-metrics)
 - [👥 Integrantes](#-integrantes)
 - [🔗 Links do Projeto](#-links-do-projeto)
+- [📸 Lighthouse Metrics](#-lighthouse-metrics)
 - [📊 Requisitos Atendidos](#-requisitos-atendidos)
 - [📄 Licença](#-licença)
 
@@ -57,8 +57,8 @@ Este projeto consome uma API BFF (Backend For Frontend) que retorna palavras em 
 
 1. **Clone o repositório**
 ```bash
-git clone <url-do-seu-repositorio>
-cd FIAP
+git clone https://github.com/matheusassumpcao/fiap-vocab-learning.git
+cd fiap-vocab-learning
 ```
 
 2. **Instale as dependências**
@@ -66,22 +66,17 @@ cd FIAP
 npm install
 ```
 
-3. **(Opcional) Configure seu próprio BFF**
-```bash
-# Crie um arquivo .env na raiz do projeto
-echo "VITE_BFF_URL=https://seu-bff.onrender.com/ask" > .env
-```
-> Se não configurar, usará a API padrão da aula
-
-4. **Execute o servidor de desenvolvimento**
+3. **Execute o servidor de desenvolvimento**
 ```bash
 npm run dev
 ```
 
-5. **Acesse no navegador**
+4. **Acesse no navegador**
 ```
 http://localhost:5173
 ```
+
+> **Nota**: O projeto está configurado para usar o BFF em produção (https://fiap-vocab-learning.onrender.com/ask). Para desenvolvimento local do BFF, consulte o [README do BFF](./bff/README.md).
 
 ## 🏗️ Build para Produção
 
@@ -134,7 +129,7 @@ npm run preview
 
 ---
 
-## 📊 Web Vitals - Lighthouse Metrics
+## 👥 Integrantes
 
 - **Matheus Assumpção** - RM 362155
 - **João Pedro Fonseca de Siqueira** - RM 361693
