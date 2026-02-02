@@ -184,14 +184,20 @@ export default {
     const error = ref(null)
     const searchQuery = ref('')
 
-    const BFF_URL = 'https://fiap-bff-9aojr.onrender.com/ask'
+    // API URL - Configurável via variável de ambiente
+    // Em desenvolvimento: usa o BFF local (localhost:3000)
+    // Em produção: usa o BFF deployado no Render (você configurará depois do deploy)
+    // Para configurar sua URL em produção, crie um arquivo .env com: VITE_BFF_URL=https://seu-bff.onrender.com/ask
+    const BFF_URL = import.meta.env.VITE_BFF_URL || 'http://localhost:3000/ask'
 
     const fetchWords = async () => {
+      console.log('🔄 Buscando palavras da API:', BFF_URL)
       loading.value = true
       error.value = null
 
       try {
         const response = await axios.get(BFF_URL, { timeout: 10000 })
+        console.log('✅ Resposta recebida:', response.data)
         
         if (Array.isArray(response.data)) {
           words.value = response.data.map(word => ({

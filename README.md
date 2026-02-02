@@ -44,12 +44,19 @@ cd FIAP
 npm install
 ```
 
-3. **Execute o servidor de desenvolvimento**
+3. **(Opcional) Configure seu próprio BFF**
+```bash
+# Crie um arquivo .env na raiz do projeto
+echo "VITE_BFF_URL=https://seu-bff.onrender.com/ask" > .env
+```
+> Se não configurar, usará a API padrão da aula
+
+4. **Execute o servidor de desenvolvimento**
 ```bash
 npm run dev
 ```
 
-4. **Acesse no navegador**
+5. **Acesse no navegador**
 ```
 http://localhost:5173
 ```
