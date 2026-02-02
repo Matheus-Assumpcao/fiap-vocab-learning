@@ -2,6 +2,28 @@
 
 Uma aplicação web moderna para aprender inglês e expandir seu vocabulário, desenvolvida para a disciplina de Front-end Engineering da FIAP.
 
+---
+
+## 📑 Índice
+
+- [🎯 Objetivo](#-objetivo)
+- [🚀 Stack Utilizada](#-stack-utilizada)
+- [✨ Funcionalidades](#-funcionalidades)
+- [📋 Pré-requisitos](#-pré-requisitos)
+- [🔧 Como Executar Localmente](#-como-executar-localmente)
+- [🏗️ Build para Produção](#️-build-para-produção)
+- [🌐 Deploy](#-deploy)
+  - [Vercel](#vercel-recomendado)
+  - [Netlify](#netlify)
+  - [Render](#render)
+- [📊 Web Vitals - Lighthouse Metrics](#-web-vitals---lighthouse-metrics)
+- [👥 Integrantes](#-integrantes)
+- [🔗 Links do Projeto](#-links-do-projeto)
+- [📊 Requisitos Atendidos](#-requisitos-atendidos)
+- [📄 Licença](#-licença)
+
+---
+
 ## 🎯 Objetivo
 
 Este projeto consome uma API BFF (Backend For Frontend) que retorna palavras em inglês com suas descrições e exemplos de uso, apresentando-as de forma visual e interativa para auxiliar no estudo de inglês.
@@ -110,125 +132,9 @@ npm run preview
    - **Publish Directory**: `dist`
 5. Clique em "Create Static Site"
 
+---
+
 ## 📊 Web Vitals - Lighthouse Metrics
-
-### O que são Web Vitals?
-
-Web Vitals são métricas essenciais que o Google usa para medir a experiência do usuário em sites. As principais métricas incluem:
-
-#### **LCP (Largest Contentful Paint)**
-- **O que mede**: Tempo até o maior elemento de conteúdo ser renderizado
-- **Meta ideal**: < 2.5 segundos
-- **Importância**: Indica a velocidade de carregamento percebida pelo usuário
-
-#### **FID (First Input Delay)**
-- **O que mede**: Tempo entre primeira interação e resposta do navegador
-- **Meta ideal**: < 100 milissegundos
-- **Importância**: Mede a responsividade da página
-
-#### **CLS (Cumulative Layout Shift)**
-- **O que mede**: Estabilidade visual durante carregamento
-- **Meta ideal**: < 0.1
-- **Importância**: Evita mudanças inesperadas de layout
-
-#### **FCP (First Contentful Paint)**
-- **O que mede**: Tempo até o primeiro conteúdo ser renderizado
-- **Meta ideal**: < 1.8 segundos
-- **Importância**: Primeira impressão de velocidade
-
-#### **TTI (Time to Interactive)**
-- **O que mede**: Tempo até a página estar completamente interativa
-- **Meta ideal**: < 3.8 segundos
-- **Importância**: Quando o usuário pode realmente usar a página
-
-#### **Speed Index**
-- **O que mede**: Velocidade de exibição do conteúdo
-- **Meta ideal**: < 3.4 segundos
-- **Importância**: Quão rápido o conteúdo é visualmente exibido
-
-### Como Testar
-
-1. Abra o site no Google Chrome
-2. Pressione F12 para abrir DevTools
-3. Vá na aba "Lighthouse"
-4. Selecione "Performance" e "Desktop" ou "Mobile"
-5. Clique em "Analyze page load"
-
-*Os resultados do Lighthouse serão adicionados aqui após o deploy.*
-
-## 🔗 Links
-
-- **Repositório**: [GitHub - Seu repositório]
-- **Deploy**: [URL do site hospedado]
-- **API BFF**: https://fiap-bff-9aojr.onrender.com/ask
-
-## 🎯 BFF Próprio (Bônus +1 ponto)
-
-Este projeto inclui um BFF próprio desenvolvido em Node.js + Express + OpenAI.
-
-### Como executar o BFF
-
-```bash
-cd bff
-npm install
-cp .env.example .env
-npm start
-```
-
-O BFF estará disponível em `http://localhost:3000/ask`
-
-### Deploy do BFF
-
-Consulte o [README do BFF](./bff/README.md) para instruções de deploy no Render.
-
-**URL do BFF (após deploy)**: [Adicione aqui a URL do seu BFF hospedado]
-
-## 📊 Lighthouse Metrics (Bônus +1 ponto)
-
-### Como Gerar o Relatório
-
-1. Abra o site no Google Chrome
-2. Pressione `F12` ou `Cmd+Option+I` (Mac)
-3. Vá na aba "Lighthouse"
-4. Selecione "Performance", "Accessibility", "Best Practices", "SEO"
-5. Escolha "Desktop" ou "Mobile"
-6. Clique em "Analyze page load"
-
-### Métricas Explicadas
-
-**Performance Metrics:**
-
-- **First Contentful Paint (FCP)**: < 1.8s ✅
-  - Tempo até o primeiro elemento de conteúdo aparecer na tela
-  - Importante para a primeira impressão do usuário
-
-- **Largest Contentful Paint (LCP)**: < 2.5s ✅
-  - Tempo até o maior elemento visível ser carregado
-  - Core Web Vital - afeta o ranking no Google
-
-- **Total Blocking Time (TBT)**: < 200ms ✅
-  - Tempo total que a página ficou bloqueada para interação
-  - Afeta a responsividade percebida
-
-- **Cumulative Layout Shift (CLS)**: < 0.1 ✅
-  - Mede a estabilidade visual durante o carregamento
-  - Core Web Vital - evita cliques acidentais
-
-- **Speed Index**: < 3.4s ✅
-  - Quão rápido o conteúdo é visualmente exibido
-  - Média de tempo para exibir o conteúdo
-
-**Outros Indicadores:**
-
-- **Accessibility**: 90-100 (Acessibilidade)
-- **Best Practices**: 90-100 (Melhores práticas)
-- **SEO**: 90-100 (Otimização para buscadores)
-
-> 📸 **Screenshot do Lighthouse será adicionado aqui após o deploy**
-
-*Os prints das métricas serão incluídos no PDF de entrega.*
-
-## 👥 Integrantes
 
 - **Matheus Assumpção** - RM 362155
 - **João Pedro Fonseca de Siqueira** - RM 361693
