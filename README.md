@@ -187,4 +187,4 @@ Este projeto foi desenvolvido para fins educacionais como parte da disciplina de
 
 ---
 
-Desenvolvido com ❤️ para FIAP - 2026
+Desenvolvido para FIAP - 2026
